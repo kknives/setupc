@@ -6,6 +6,8 @@
 
 # Assuming that the dotfiles repo has been cloned into dotfiles.git
 
+echo "dotfiles.git" > .gitignore
+git clone --bare https://github.com/kknives/dotfiles.git $HOME/dotfiles.git
 dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles.git --work-tree=$HOME"
 
 $dotfiles config --local status.showUntrackedFiles no
