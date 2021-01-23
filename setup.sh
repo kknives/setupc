@@ -10,3 +10,7 @@ dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles.git --work-tree=$HOME"
 
 $dotfiles config --local status.showUntrackedFiles no
 $dotfiles checkout
+
+# tmux related setup
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux source ~/.tmux.conf
